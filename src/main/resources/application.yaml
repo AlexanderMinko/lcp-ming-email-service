@@ -1,0 +1,21 @@
+spring:
+  mail:
+    host: ${MAIL_HOST:smtp.mailtrap.io}
+    port: ${MAIL_PORT:2525}
+    username: ${MAIL_USERNAME:b20e2c1fcad1f1}
+    password: ${MAIL_PASSWORD:90be35c41f6214}
+    protocol: smtp
+
+logging:
+  level:
+    com.socket.productservice: debug
+    org.apache.kafka: warn
+
+swagger:
+  api:
+    title: Email Service API
+    description: Email Service Description
+    version: 1.0
+
+server:
+  port: 8092
